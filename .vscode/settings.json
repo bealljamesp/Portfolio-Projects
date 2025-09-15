@@ -5,6 +5,8 @@
 
   // Always run notebooks locally
   "jupyter.jupyterServerType": "local",
+  "jupyter.kernels.filterByInterpreter": true,
+  "jupyter.interactiveWindow.kernelProvider": "jupyter",
 
   // Speed up on Windows/OneDrive by ignoring noisy dirs
   "files.watcherExclude": {
