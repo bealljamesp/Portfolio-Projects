@@ -1,14 +1,9 @@
 {
-  // Pin the exact interpreter to skip scanning
   "python.defaultInterpreterPath": "C:\\Users\\beall\\Miniconda3\\envs\\ai-scm-portfolio\\python.exe",
-
-  // Tell VS Code where conda.exe is
   "python.condaPath": "C:\\Users\\beall\\Miniconda3\\Scripts\\conda.exe",
-
-  // Keep Jupyter local and predictable
   "jupyter.jupyterServerType": "local",
 
-  // Speed up workspace scanning (OneDrive can be slow)
+  // Speed up Windows/OneDrive workspaces
   "files.watcherExclude": {
     "**/.git/**": true,
     "**/.ipynb_checkpoints/**": true,
@@ -18,8 +13,5 @@
     "**/.git": true,
     "**/.ipynb_checkpoints": true,
     "**/__pycache__": true
-  },
-  "python-envs.defaultEnvManager": "ms-python.python:conda",
-  "python-envs.defaultPackageManager": "ms-python.python:conda",
-  "python-envs.pythonProjects": []
+  }
 }
