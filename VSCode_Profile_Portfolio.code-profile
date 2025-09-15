@@ -1,0 +1,29 @@
+{
+  "name": "Portfolio",
+  "extensions": {
+    "enabled": [
+      "ms-python.python",
+      "ms-toolsai.jupyter"
+    ],
+    "disabled": []
+  },
+  "settings": {
+    "python.defaultInterpreterPath": "C:\\\\Users\\\\beall\\\\Miniconda3\\\\envs\\\\ai-scm-portfolio\\\\python.exe",
+    "python.condaPath": "C:\\\\Users\\\\beall\\\\Miniconda3\\\\Scripts\\\\conda.exe",
+    "jupyter.jupyterServerType": "local",
+    "files.watcherExclude": {
+      "**/.git/**": true,
+      "**/.ipynb_checkpoints/**": true,
+      "**/__pycache__/**": true
+    },
+    "search.exclude": {
+      "**/.git": true,
+      "**/.ipynb_checkpoints": true,
+      "**/__pycache__": true
+    },
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic"
+  },
+  "keybindings": [],
+  "snippets": {}
+}
