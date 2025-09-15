@@ -205,3 +205,30 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Portfolio-specific ignores ---
+# Large/raw data & generated artifacts
+**/data/**
+!**/data/*.sample.*
+**/reports/**
+!**/reports/README.md
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+~$*            # Office temp files
+*.lnk          # Windows shortcuts
+
+# VS Code: keep only settings.json tracked
+.vscode/*
+!.vscode/settings.json
+
+# Devcontainer local venvs (if any)
+.devcontainer/.venv/
+
+# Zips/bundles you export locally
+*.zip
+
+# OneDrive conflict files
+* - Copy (*/)** 
+* - Copy.* 
