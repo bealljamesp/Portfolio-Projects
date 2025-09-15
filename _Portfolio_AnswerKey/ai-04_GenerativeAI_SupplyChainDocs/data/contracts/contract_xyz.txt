@@ -1,0 +1,2 @@
+Supplier XYZ will provide 500 units per month. Lead time: 14 days. Penalty: $100/day after 3 days delay.
+Automatic renewal after 12 months unless notified 30 days prior.

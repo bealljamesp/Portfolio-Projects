@@ -1,0 +1,155 @@
+📊 1. Business Analysis
+
+Words & Phrases to Know
+
+Stakeholder requirements
+
+Gap analysis
+
+As-is vs. To-be process
+
+KPIs / Metrics dashboard
+
+Business case development
+
+ROI analysis
+
+Agile user stories & acceptance criteria
+
+Value stream mapping
+
+Root cause analysis (5 Whys, Fishbone)
+
+Change management
+
+Technology, Concepts, Tools
+
+Excel / Google Sheets (advanced modeling, pivot tables)
+
+SQL for business queries
+
+Tableau / Power BI (dashboards)
+
+BPMN (Business Process Modeling Notation)
+
+Requirements management tools (Jira, Confluence, Trello)
+
+SWOT & PESTLE analysis frameworks
+
+Wireframing tools (Lucidchart, Miro, Figma for process maps)
+
+Portfolio Project Add-ons
+
+A KPI Dashboard Project: Take logistics or retail data and build a Tableau/Power BI dashboard with trend lines, KPIs, and drill-downs.
+
+Process Mapping Project: Document a sample supply chain process with BPMN in Lucidchart/Miro, including "as-is vs. to-be" flow.
+
+🤖 2. Artificial Intelligence (AI / Data Science)
+
+Words & Phrases to Know
+
+Predictive vs. prescriptive analytics
+
+Model training vs. inference
+
+Overfitting / underfitting
+
+Feature engineering
+
+Bias and fairness in AI
+
+Explainability (XAI)
+
+Generative AI vs. Discriminative AI
+
+Neural networks / deep learning
+
+Reinforcement learning
+
+Computer vision vs. NLP
+
+Technology, Concepts, Tools
+
+Python (pandas, scikit-learn, TensorFlow/PyTorch basics)
+
+SQL for data extraction
+
+Jupyter Notebooks for experiments
+
+ML concepts: regression, classification, clustering
+
+ML lifecycle tools: MLflow, Weights & Biases (optional advanced)
+
+Large Language Models (ChatGPT, Hugging Face Transformers)
+
+APIs for AI services (OpenAI, AWS, Azure ML, Google Vertex AI)
+
+Git/GitHub for version control
+
+Portfolio Project Add-ons
+
+Churn Prediction (Customer Analytics): Already doing this — emphasize feature engineering & model explainability.
+
+Demand Forecasting Project: ARIMA vs. Prophet vs. ML approach. Tie directly to SCM.
+
+AI-Enhanced Supply Chain Simulation: Use Monte Carlo simulation + ML to show how AI predicts disruptions.
+
+🚚 3. Logistics / Supply Chain Management (SCMG emphasis)
+
+Words & Phrases to Know
+
+End-to-end supply chain
+
+Bullwhip effect
+
+EOQ (Economic Order Quantity)
+
+ROP (Reorder Point)
+
+Lead time & cycle time
+
+Service level / fill rate
+
+Just-in-time (JIT) vs. Just-in-case
+
+Safety stock
+
+Supply chain visibility / control tower
+
+Digital twin
+
+Reverse logistics / circular economy
+
+Technology, Concepts, Tools
+
+ERP Systems (SAP, Oracle, NetSuite basics)
+
+Supply chain optimization models (LP/MIP)
+
+Forecasting techniques (ARIMA, ETS, Prophet)
+
+Inventory control formulas (EOQ, ROP, SS)
+
+Monte Carlo simulation for demand variability
+
+GIS / routing tools (ArcGIS, Google OR-Tools)
+
+IoT sensors in supply chain (tracking/visibility)
+
+Blockchain in logistics (traceability)
+
+Portfolio Project Add-ons
+
+Inventory Optimization Project: Calculate EOQ/ROP/SS with real or simulated demand data.
+
+Transportation Network Optimization: Use Python (PuLP/OR-Tools) to minimize cost of facility placement or delivery routing.
+
+Supply Chain Digital Twin (Prototype): Simulate a simplified supply chain with Python — feed in demand variability and simulate inventory positions.
+
+🎯 Putting It Together for Interviews
+
+Business Analysis angle → Show you can connect data insights to business value. (E.g., “I used SQL + Tableau to identify bottlenecks, then documented a new process with BPMN.”)
+
+AI angle → Show you understand both technical and ethical sides. (E.g., “I built a churn model but also measured fairness to avoid bias.”)
+
+SCMG angle → Show you can apply analytics to concrete supply chain decisions. (E.g., “I optimized reorder points under uncertain demand using Monte Carlo + EOQ.”)
