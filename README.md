@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![CI](https://github.com/bealljamesp/Portfolio-Projects/actions/workflows/ci-notebooks.yml/badge.svg)
+
 # Portfolio Index
 
 This repository hosts **13 projects** across four groups. Each project folder contains data placeholders (or synthetic data in the AnswerKey), Jupyter notebooks, and a README.
