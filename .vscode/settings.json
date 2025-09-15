@@ -1,9 +1,12 @@
 {
+  // Force the ai-scm-portfolio Conda env
   "python.defaultInterpreterPath": "C:\\Users\\beall\\Miniconda3\\envs\\ai-scm-portfolio\\python.exe",
   "python.condaPath": "C:\\Users\\beall\\Miniconda3\\Scripts\\conda.exe",
+
+  // Always run notebooks locally
   "jupyter.jupyterServerType": "local",
 
-  // Speed up Windows/OneDrive workspaces
+  // Speed up on Windows/OneDrive by ignoring noisy dirs
   "files.watcherExclude": {
     "**/.git/**": true,
     "**/.ipynb_checkpoints/**": true,
@@ -13,5 +16,9 @@
     "**/.git": true,
     "**/.ipynb_checkpoints": true,
     "**/__pycache__": true
-  }
+  },
+
+  // Optional polish
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic"
 }
