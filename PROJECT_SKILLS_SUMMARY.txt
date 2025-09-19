@@ -1,0 +1,22 @@
+PORTFOLIO PROJECTS — SKILLS & SUMMARY
+Generated: 2025-09-19
+
+[Blockchain/Common]
+Summary: Foundational utilities, smart contracts, and notebooks to learn hashing, anchoring, and verification.
+Skills: hashing, tamper-evidence, basic smart contracts, Python utilities, Jupyter workflows.
+
+[BLK-01 — Food Traceability PoC]
+Summary: Chain-of-custody with temperature events; anchor row digests and verify integrity.
+Skills: EPCIS-style modeling, CSV row hashing, join anchored refs, recall analysis KPIs.
+
+[BLK-02 — Freight Settlement Smart Contracts]
+Summary: Milestone-triggered payments to shorten settlement cycles and reduce disputes.
+Skills: smart contract event design, milestone modeling, dual-signature flows, KPI tracking.
+
+[BLK-03 — Pharma Serialization DSCSA Sim]
+Summary: Serialize and verify unit movement; sample verification across partners.
+Skills: identifier anchoring, serialization data models, audit sampling, compliance reporting.
+
+[Integrations in Logistics & SCM_AI]
+Summary: Plug provenance/risk into KPIs, forecasts, and optimization models.
+Skills: data joins, cost modifiers, risk scoring, explainability for decisions.

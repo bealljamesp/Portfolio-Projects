@@ -1,0 +1,9 @@
+# Initialize + set default branch name (optional global default)
+git config --global init.defaultBranch main
+
+git init
+git add .
+git commit -m "Initial commit: portfolio structure + env/devcontainer"
+# Link to an existing empty repo you created on GitHub:
+git remote add origin https://github.com/bealljamesp/<repo>.git
+git push -u origin main

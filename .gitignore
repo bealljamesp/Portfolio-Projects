@@ -55,6 +55,9 @@ cover/
 *.mo
 *.pot
 
+# Blockchain stuff:
+Blockchain/common/utils/_local_anchor_registry.json
+
 # Django stuff:
 *.log
 local_settings.py

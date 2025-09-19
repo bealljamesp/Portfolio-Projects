@@ -1,0 +1,19 @@
+{
+  "source": "C:/Users/beall/OneDrive/Documents/Portfolio/Blockchain/common/notebooks/demo_shipments.csv",
+  "hash_algorithm": "sha256",
+  "row_policy": {
+    "columns": [
+      "case_id",
+      "gtin",
+      "shipment_id",
+      "temp_c"
+    ],
+    "separator": "|",
+    "float_precision": 6,
+    "null_as": "",
+    "whitespace_norm": "strip+collapse",
+    "delimiter_escape": true
+  },
+  "ordering": "by 'shipment_id' ascending",
+  "dataset_hash": "16a69b607cb86a202c15fd16c1465292076e07dabc2b63f5070ed4e0dbb80fce"
+}

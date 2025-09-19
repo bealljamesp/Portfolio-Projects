@@ -12,18 +12,14 @@ dependencies:
   - matplotlib
   - scikit-learn
   - pulp
-  - simpy
   - pip:
-      - shap
-      - prophet
-      - tensorflow
-      - opencv-python
-      - tiktoken
-      - langchain
-      - openai
+      - web3
+      - eth-account
+      - python-dotenv
+      - pydantic
+      - fastapi
 # Notes:
-# - 'tensorflow' and 'opencv-python' are optional/heavy; remove if not needed.
-# - On Windows, Prophet may require a C++ build toolchain; alternatively use 'neuralprophet' or stick to RF/XGBoost.
-# - Create with:    conda env create -f environment.yml
-# - Update with:    conda env update -f environment.yml --prune
-# - Activate:       conda activate ai-scm-portfolio
+# - Keep pip deps minimal at first; you can add more as needed.
+# - Create:  conda env create -f environment.yml
+# - Update:  conda env update -f environment.yml --prune
+# - Activate: conda activate ai-scm-portfolio

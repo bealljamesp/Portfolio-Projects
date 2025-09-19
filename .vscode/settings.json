@@ -23,4 +23,16 @@
   // Optional polish
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "basic"
+
+  "python.defaultInterpreterPath": "C:\\Users\\beall\\Miniconda3\\envs\\ai-scm-portfolio\\python.exe",
+  "python.condaPath": "C:\\Users\\beall\\Miniconda3\\Scripts\\conda.exe",
+  "jupyter.jupyterServerType": "local",
+  "jupyter.kernels.filterByInterpreter": true,
+  "terminal.integrated.profiles": {
+    "PowerShell (Conda)": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": ["-NoExit", "-Command", "conda activate ai-scm-portfolio"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell (Conda)"
 }
