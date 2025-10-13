@@ -57,6 +57,8 @@ cover/
 
 # Blockchain stuff:
 Blockchain/common/utils/_local_anchor_registry.json
+services/web3_anchor/.env
+Logistics/LOG-04_TamperEvident_Warehouse/warehouse.db
 
 # Django stuff:
 *.log

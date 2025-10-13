@@ -1,25 +1,70 @@
-name: ai-scm-portfolio
+name: analytics_portfolio
 channels:
   - conda-forge
   - defaults
 dependencies:
+  # --- Python runtime ---
   - python=3.11
   - pip
-  - jupyter
+
+  # --- Jupyter & friends ---
+  - jupyterlab
   - ipykernel
+  - nb_conda_kernels
+  - ipywidgets
+
+  # --- Core analytics stack ---
   - numpy
   - pandas
-  - matplotlib
+  - scipy
   - scikit-learn
-  - pulp
+  - statsmodels
+
+  # --- Viz & storytelling ---
+  - matplotlib
+  - plotly
+  - seaborn
+
+  # --- Data IO / ETL ---
+  - pyarrow           # Parquet/Arrow; great for columnar data
+  - openpyxl          # Excel .xlsx read/write
+  - xlrd              # Legacy Excel reader
+  - sqlalchemy
+  - requests
+  - beautifulsoup4
+  - lxml
+  - pyyaml
+
+  # --- Graphs / causal / optimization / sim ---
+  - networkx
+  - graphviz
+  - python-graphviz   # for rendering DOT graphs
+  - shap
+  - lime
+  - pulp              # Linear programming alternative
+  - simpy             # Discrete-event simulation
+  - mesa              # Agent-based simulation (ABM)
+
+  # --- Dev experience & QA ---
+  - black
+  - isort
+  - pre-commit
+  - pytest
+
+  # --- Optional: Bayesian/causal (uncomment as needed) ---
+  # - pymc             # Bayesian modeling (heavier)
+  # - arviz            # Diagnostics for Bayesian models
+
+  # Some causal/DAG libs are pip-first. Keep them here so env stays reproducible.
   - pip:
-      - web3
-      - eth-account
-      - python-dotenv
-      - pydantic
-      - fastapi
-# Notes:
-# - Keep pip deps minimal at first; you can add more as needed.
-# - Create:  conda env create -f environment.yml
-# - Update:  conda env update -f environment.yml --prune
-# - Activate: conda activate ai-scm-portfolio
+    - ortools
+      # Causal graphs & inference
+      # (Uncomment if/when needed. If install errors occur, try in WSL.)
+      # - dowhy
+      # - econml
+      # - causalnex
+      # - pgmpy
+
+      # Knowledge graphs (optional; pip ecosystem is more up-to-date)
+      # - rdflib
+      # - owlready2

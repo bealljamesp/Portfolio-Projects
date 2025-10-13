@@ -1,14 +1,13 @@
 {
-  // Force the ai-scm-portfolio Conda env
   "python.defaultInterpreterPath": "C:\\Users\\beall\\Miniconda3\\envs\\ai-scm-portfolio\\python.exe",
   "python.condaPath": "C:\\Users\\beall\\Miniconda3\\Scripts\\conda.exe",
 
-  // Always run notebooks locally
+  "python.terminal.activateEnvironment": true,
+
   "jupyter.jupyterServerType": "local",
   "jupyter.kernels.filterByInterpreter": true,
   "jupyter.interactiveWindow.kernelProvider": "jupyter",
 
-  // Speed up on Windows/OneDrive by ignoring noisy dirs
   "files.watcherExclude": {
     "**/.git/**": true,
     "**/.ipynb_checkpoints/**": true,
@@ -20,19 +19,18 @@
     "**/__pycache__": true
   },
 
-  // Optional polish
   "python.analysis.autoImportCompletions": true,
-  "python.analysis.typeCheckingMode": "basic"
+  "python.analysis.typeCheckingMode": "basic",
 
-  "python.defaultInterpreterPath": "C:\\Users\\beall\\Miniconda3\\envs\\ai-scm-portfolio\\python.exe",
-  "python.condaPath": "C:\\Users\\beall\\Miniconda3\\Scripts\\conda.exe",
-  "jupyter.jupyterServerType": "local",
-  "jupyter.kernels.filterByInterpreter": true,
   "terminal.integrated.profiles": {
     "PowerShell (Conda)": {
       "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
       "args": ["-NoExit", "-Command", "conda activate ai-scm-portfolio"]
     }
   },
-  "terminal.integrated.defaultProfile.windows": "PowerShell (Conda)"
+  "terminal.integrated.defaultProfile.windows": "PowerShell (Conda)",
+
+  "terminal.integrated.env.windows": {
+    "VERIFY_API_BASE": "http://127.0.0.1:8001"
+  }
 }

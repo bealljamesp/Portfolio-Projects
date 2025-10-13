@@ -2,3 +2,4 @@
 *.csv text eol=lf
 *.tsv text eol=lf
 *.ipynb -diff
+*.ipynb merge=nbdev-merge
