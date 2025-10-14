@@ -1,5 +1,7 @@
 from __future__ import annotations
+
 from dataclasses import dataclass
+
 import numpy as np
 
 
@@ -27,9 +29,7 @@ def simulate_sQ(
     """
     rng = np.random.default_rng(seed)
     weeks = len(demand)
-    on_hand = float(
-        initial_inventory if initial_inventory is not None else policy_s + policy_Q
-    )
+    on_hand = float(initial_inventory if initial_inventory is not None else policy_s + policy_Q)
     pipeline = []  # list of (arrival_week, qty)
     stockouts = 0
     orders = 0

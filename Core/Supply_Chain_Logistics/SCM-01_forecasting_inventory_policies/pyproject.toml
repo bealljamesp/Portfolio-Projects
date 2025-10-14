@@ -1,11 +1,12 @@
 [tool.ruff]
 line-length = 100
 target-version = "py311"
+fix = true              # <-- belongs here (global)
+unsafe-fixes = false    # optional safety
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "B", "UP"]   # basics: pyflakes/pycodestyle/imports/bugbear/pyupgrade
-ignore = []                           # add ignores here if needed
-fix = true
+select = ["E", "F", "I", "B", "UP"]  # pycodestyle/pyflakes/imports/bugbear/pyupgrade
+ignore = []                           # add ignores as needed
 
 [tool.ruff.format]
 quote-style = "double"
