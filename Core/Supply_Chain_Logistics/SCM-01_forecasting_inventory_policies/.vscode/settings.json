@@ -1,66 +1,54 @@
 {
-    // ----- Python & Conda -----
-    "python.defaultInterpreterPath": "C:\\Users\\beall\\miniconda3\\envs\\analytics_portfolio\\python.exe",
-    "python.terminal.activateEnvironment": true,
+  // ----- Python & Conda -----
+  "python.defaultInterpreterPath": "C:\\Users\\beall\\miniconda3\\envs\\analytics_portfolio\\python.exe",
+  "python.terminal.activateEnvironment": true,
 
-    // ----- Jupyter -----
-    "jupyter.notebookFileRoot": "${workspaceFolder}",
-    "jupyter.askForKernelRestart": false,
+  // ----- Jupyter -----
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "jupyter.askForKernelRestart": false,
 
-    // ----- Editor Quality of Life (Ruff Integration) -----
-    "files.autoSave": "afterDelay",
-    "editor.formatOnSave": true,
+  // ----- Editor Quality of Life -----
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "python.formatting.provider": "none",
+  "editor.tabSize": 4,
 
-    // Explicitly set Ruff as the default formatter for all file types that support it
-    "editor.defaultFormatter": "charliermarsh.ruff",
+  // ----- Ruff: lint + format + organize imports -----
+  "ruff.lint.enable": true,
+  "ruff.format.enable": true,
+  "ruff.organizeImports": true,
 
-    // Disable Python extension's formatting provider, as Ruff handles it
-    "python.formatting.provider": "none",
+  // ----- Data Science Comfort -----
+  "notebook.lineNumbers": "on",
+  "notebook.cellToolbarVisibility": "hover",
+  "notebook.output.textLineLimit": 50,
 
-    // Ruff: Configure on-save actions (Fixing and Import Organizing)
-    "editor.codeActionsOnSave": {
-        // Explicitly enable Ruff's fixing (linting) on save
-        "source.fixAll.ruff": "explicit",
-        // Explicitly enable Ruff's import sorting on save
-        "source.organizeImports.ruff": "explicit"
-    },
+  // ----- Git / Version Control -----
+  "git.autofetch": true,
+  "git.confirmSync": false,
 
-    // Your tab size setting (no change, just moved for flow)
-    "editor.tabSize": 4,
+  // ----- Exclude -----
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.ipynb_checkpoints": true,
+    "**/.pytest_cache": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.venv": true
+  },
 
-    // The following Ruff settings are largely redundant as they are handled by
-    // the "editor.defaultFormatter" and "editor.codeActionsOnSave" above.
-    // "ruff.lint.enable": true,
-    // "ruff.format.enable": true,
-    // "ruff.organizeImports": true
+  // ----- Environment Manager (optional; safe defaults) -----
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda",
+  "python-envs.pythonProjects": [],
 
-    // ----- Data Science Comfort -----
-    "notebook.lineNumbers": "on",
-    "notebook.cellToolbarVisibility": "hover",
-    "notebook.output.textLineLimit": 50,
+  // ----- Jupyter Behavior -----
+  "jupyter.interactiveWindow.textEditor.executeSelection": false
 
-    // ----- Git / Version Control -----
-    "git.autofetch": true,
-    "git.confirmSync": false,
-
-    // ----- Exclude -----
-    "files.exclude": {
-        "**/__pycache__": true,
-        "**/.ipynb_checkpoints": true,
-        "**/.pytest_cache": true
-    },
-    "search.exclude": {
-        "**/.git": true,
-        "**/.venv": true
-    },
-    // The following settings are user-level, but are fine here to enforce project standards.
-    "python-envs.defaultEnvManager": "ms-python.python:conda",
-    "python-envs.defaultPackageManager": "ms-python.python:conda",
-    "python-envs.pythonProjects": [],
-    "jupyter.interactiveWindow.textEditor.executeSelection": false
-
-    // ----- Testing (enable later when you add tests) -----
-    // "python.testing.pytestEnabled": true,
-    // "python.testing.unittestEnabled": false,
-    // "python.testing.pytestArgs": ["tests"]
+  // ----- Testing (enable later when tests/ folder is added) -----
+  // "python.testing.pytestEnabled": true,
+  // "python.testing.unittestEnabled": false,
+  // "python.testing.pytestArgs": ["tests"]
 }
