@@ -21,7 +21,7 @@ Brief description of how these projects support data-driven decision-making and 
 
 ## 🛠️ Methods & Tools
 - **Libraries:** pandas, numpy, scikit-learn, statsmodels, matplotlib, plotly  
-- **Environment:** \conda activate analytics_portfolio\ → select kernel **Python (analytics_portfolio)** in VS Code/Jupyter  
+- **Environment:** \conda activate analytics_portfolio\ → select kernel **Python (analytics_portfolio)** in VS Code/Jupyter
 
 ---
 
@@ -35,8 +35,6 @@ python -m ipykernel install --user --name analytics_portfolio --display-name "Py
 ---
 
 ## 📚 Project Index
-- [BLK-01_food_traceability_poc](./BLK-01_food_traceability_poc/)
-- [BLK-02_freight_settlement_smartcontracts](./BLK-02_freight_settlement_smartcontracts/)
 - [BLK-03_pharma_serialization_dscsa_sim](./BLK-03_pharma_serialization_dscsa_sim/)
 - [common](./common/)
 

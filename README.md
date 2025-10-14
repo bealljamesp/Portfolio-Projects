@@ -79,17 +79,20 @@ Each project README addresses:
 
 ---
 
-## 🚀 Project Progression
+### 📈 Project Progression (Updated)
 
-Project phases (see [PROJECT_GAMEPLAN.md](docs/PROJECT_GAMEPLAN.md)) illustrate progression from foundational analytics to system-level decision design.
-
-| Phase | Focus | Representative Projects |
-|--------|--------|-------------------------|
-| **1. Foundations** | Strengthen classic analytics with AI assist | `LOG-01 AI-Enhanced KPI Insights`, `DA-03 Forecasting Modernized` |
-| **2. Applied Intelligence** | Interpretable machine learning | `AI-01 Transparent Churn`, `AI-04 Generative Reports` |
-| **3. Enabler Expansion** | Explore next-generation technologies | `Edge_IoT Predictive Maintenance`, `Blockchain Provenance` |
-| **4. System Integration** | Combine simulation, optimization, and governance | `Supply_Chain Digital Twin` |
-| **5. Capstone** | Synthesize full Decision Intelligence Framework | `Decision Intelligence for Logistics Ecosystems` |
+| Tier | Project | Theme / Focus |
+|------|----------|---------------|
+| **1. Decision Intelligence Foundation** | `LOG-02_forecasting_inventory_policies` | Forecasting → Inventory Policy → Simulation (first end-to-end Decision Intelligence case) |
+| **2. Core Analytics Refresh** | `DA-01_churn_prediction_logit` | Classical modeling, interpretation, and explainability |
+|  | `DA-03_time_series_forecasting` | Forecasting fundamentals; statistical vs. ML comparison |
+| **3. Advanced Logistics Modeling** | `LOG-03_network_optimization_montecarlo` | Optimization, stochastic modeling, uncertainty |
+| **4. AI-Assisted Layer** | `AI-02_ai_forecasting_retail_demand` | Compare classical and AI forecasting models |
+|  | `AI-04_generativeai_supplychaindocs` | Automated narrative generation for supply-chain decisions |
+| **5. Governance & Trust Layer** | `BLK-03_pharma_serialization_dscsa_sim` | Blockchain traceability and compliance simulation |
+| **6. New Enabler Builds** | `SIM-01_policy_robustness_simulator` | Simulation / Digital Twin |
+|  | `KG-01_logistics_graph_inference` | Knowledge Graph reasoning |
+|  | `GOV-01_model_audit_bias_check` | Responsible AI auditing |
 
 ---
 

@@ -21,7 +21,7 @@ Brief description of how these projects support data-driven decision-making and 
 
 ## 🛠️ Methods & Tools
 - **Libraries:** pandas, numpy, scikit-learn, statsmodels, matplotlib, plotly  
-- **Environment:** \conda activate analytics_portfolio\ → select kernel **Python (analytics_portfolio)** in VS Code/Jupyter  
+- **Environment:** \conda activate analytics_portfolio\ → select kernel **Python (analytics_portfolio)** in VS Code/Jupyter
 
 ---
 
@@ -35,13 +35,8 @@ python -m ipykernel install --user --name analytics_portfolio --display-name "Py
 ---
 
 ## 📚 Project Index
-- [LOG-01_sql_python_excel_kpis_dashboard](./LOG-01_sql_python_excel_kpis_dashboard/)
-- [LOG-02_forecasting_inventory_policies](./LOG-02_forecasting_inventory_policies/)
-- [LOG-03_network_optimization_montecarlo](./LOG-03_network_optimization_montecarlo/)
-- [LOG-04_tamperevident_warehouse](./LOG-04_tamperevident_warehouse/)
-- [SCM-01_ai_inventory_optimization](./SCM-01_ai_inventory_optimization/)
-- [SCM-02_digital_twin_supplychain](./SCM-02_digital_twin_supplychain/)
-- [SCM-03_blockchain_traceability_twin_link](./SCM-03_blockchain_traceability_twin_link/)
+- [SCM-01_forecasting_inventory_policies](./SCM-01_forecasting_inventory_policies/)
+- [SCM-02_network_optimization_montecarlo](./SCM-02_network_optimization_montecarlo/)
 
 ---
 

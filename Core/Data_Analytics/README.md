@@ -21,7 +21,7 @@ Brief description of how these projects support data-driven decision-making and 
 
 ## 🛠️ Methods & Tools
 - **Libraries:** pandas, numpy, scikit-learn, statsmodels, matplotlib, plotly  
-- **Environment:** \conda activate analytics_portfolio\ → select kernel **Python (analytics_portfolio)** in VS Code/Jupyter  
+- **Environment:** \conda activate analytics_portfolio\ → select kernel **Python (analytics_portfolio)** in VS Code/Jupyter
 
 ---
 
@@ -36,9 +36,7 @@ python -m ipykernel install --user --name analytics_portfolio --display-name "Py
 
 ## 📚 Project Index
 - [DA-01_churn_prediction_logit](./DA-01_churn_prediction_logit/)
-- [DA-02_ab_testing_experiment_design](./DA-02_ab_testing_experiment_design/)
 - [DA-03_time_series_forecasting](./DA-03_time_series_forecasting/)
-- [DA-04_pricing_product_mix_optimization](./DA-04_pricing_product_mix_optimization/)
 
 ---
 

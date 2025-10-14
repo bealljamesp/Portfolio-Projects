@@ -1,0 +1,9 @@
+project: SCM-01_forecasting_inventory_policies
+sku_id: SKU-001
+holding_cost_rate: 0.25
+order_cost: 150.0
+unit_cost: 10.0
+service_level_target: 0.95
+lead_time_days: 14
+review_period_days: 7
+seed: 42

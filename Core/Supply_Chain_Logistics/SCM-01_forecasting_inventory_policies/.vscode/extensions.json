@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-toolsai.jupyter",
+    "ms-python.black-formatter",
+    "ms-python.flake8",
+    "charliermarsh.ruff",         // optional: if you switch to Ruff later
+    "ms-azuretools.vscode-docker" // optional: if you dockerize later
+  ]
+}

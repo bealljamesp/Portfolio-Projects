@@ -1,0 +1,43 @@
+{
+  // ----- Python & Conda -----
+  "python.defaultInterpreterPath": "C:\\Users\\beall\\miniconda3\\envs\\analytics_portfolio\\python.exe",
+  "python.terminal.activateEnvironment": true,
+
+  // ----- Jupyter -----
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "jupyter.askForKernelRestart": false,
+
+  // ----- Editor Quality of Life -----
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+
+  // ----- Data Science Comfort -----
+  "notebook.lineNumbers": "on",
+  "notebook.cellToolbarVisibility": "hover",
+  "notebook.output.textLineLimit": 50,
+
+  // ----- Git / Version Control -----
+  "git.autofetch": true,
+  "git.confirmSync": false,
+
+  // ----- Exclude -----
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.ipynb_checkpoints": true,
+    "**/.pytest_cache": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.venv": true
+  },
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda",
+  "python-envs.pythonProjects": [],
+  "jupyter.interactiveWindow.textEditor.executeSelection": false
+
+  // ----- Testing (enable later when you add tests) -----
+  // "python.testing.pytestEnabled": true,
+  // "python.testing.unittestEnabled": false,
+  // "python.testing.pytestArgs": ["tests"]
+}
