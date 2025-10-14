@@ -2,14 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run src/main.py",
+      "name": "Run SCM-01 (module)",
       "type": "python",
       "request": "launch",
-      "program": "${workspaceFolder}/src/main.py",
+      "module": "src.main",
       "console": "integratedTerminal",
       "justMyCode": true,
-      "cwd": "${workspaceFolder}",
-      "env": { "PYTHONPATH": "${workspaceFolder}" }
+      "cwd": "${workspaceFolder}"
     }
   ]
 }
