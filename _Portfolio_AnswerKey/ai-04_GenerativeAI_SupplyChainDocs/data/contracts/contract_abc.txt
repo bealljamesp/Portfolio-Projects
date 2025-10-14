@@ -1,2 +1,0 @@
-Supplier ABC agrees to deliver widgets within 21 days. Late delivery penalty: 2% per week.
-Exclusivity clause: None. Lead time variability possible during holidays.
