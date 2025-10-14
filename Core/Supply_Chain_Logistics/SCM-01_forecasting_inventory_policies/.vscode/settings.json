@@ -1,43 +1,66 @@
 {
-  // ----- Python & Conda -----
-  "python.defaultInterpreterPath": "C:\\Users\\beall\\miniconda3\\envs\\analytics_portfolio\\python.exe",
-  "python.terminal.activateEnvironment": true,
+    // ----- Python & Conda -----
+    "python.defaultInterpreterPath": "C:\\Users\\beall\\miniconda3\\envs\\analytics_portfolio\\python.exe",
+    "python.terminal.activateEnvironment": true,
 
-  // ----- Jupyter -----
-  "jupyter.notebookFileRoot": "${workspaceFolder}",
-  "jupyter.askForKernelRestart": false,
+    // ----- Jupyter -----
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.askForKernelRestart": false,
 
-  // ----- Editor Quality of Life -----
-  "files.autoSave": "afterDelay",
-  "editor.formatOnSave": true,
-  "editor.tabSize": 4,
+    // ----- Editor Quality of Life (Ruff Integration) -----
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
 
-  // ----- Data Science Comfort -----
-  "notebook.lineNumbers": "on",
-  "notebook.cellToolbarVisibility": "hover",
-  "notebook.output.textLineLimit": 50,
+    // Explicitly set Ruff as the default formatter for all file types that support it
+    "editor.defaultFormatter": "charliermarsh.ruff",
 
-  // ----- Git / Version Control -----
-  "git.autofetch": true,
-  "git.confirmSync": false,
+    // Disable Python extension's formatting provider, as Ruff handles it
+    "python.formatting.provider": "none",
 
-  // ----- Exclude -----
-  "files.exclude": {
-    "**/__pycache__": true,
-    "**/.ipynb_checkpoints": true,
-    "**/.pytest_cache": true
-  },
-  "search.exclude": {
-    "**/.git": true,
-    "**/.venv": true
-  },
-  "python-envs.defaultEnvManager": "ms-python.python:conda",
-  "python-envs.defaultPackageManager": "ms-python.python:conda",
-  "python-envs.pythonProjects": [],
-  "jupyter.interactiveWindow.textEditor.executeSelection": false
+    // Ruff: Configure on-save actions (Fixing and Import Organizing)
+    "editor.codeActionsOnSave": {
+        // Explicitly enable Ruff's fixing (linting) on save
+        "source.fixAll.ruff": "explicit",
+        // Explicitly enable Ruff's import sorting on save
+        "source.organizeImports.ruff": "explicit"
+    },
 
-  // ----- Testing (enable later when you add tests) -----
-  // "python.testing.pytestEnabled": true,
-  // "python.testing.unittestEnabled": false,
-  // "python.testing.pytestArgs": ["tests"]
+    // Your tab size setting (no change, just moved for flow)
+    "editor.tabSize": 4,
+
+    // The following Ruff settings are largely redundant as they are handled by
+    // the "editor.defaultFormatter" and "editor.codeActionsOnSave" above.
+    // "ruff.lint.enable": true,
+    // "ruff.format.enable": true,
+    // "ruff.organizeImports": true
+
+    // ----- Data Science Comfort -----
+    "notebook.lineNumbers": "on",
+    "notebook.cellToolbarVisibility": "hover",
+    "notebook.output.textLineLimit": 50,
+
+    // ----- Git / Version Control -----
+    "git.autofetch": true,
+    "git.confirmSync": false,
+
+    // ----- Exclude -----
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.ipynb_checkpoints": true,
+        "**/.pytest_cache": true
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/.venv": true
+    },
+    // The following settings are user-level, but are fine here to enforce project standards.
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": [],
+    "jupyter.interactiveWindow.textEditor.executeSelection": false
+
+    // ----- Testing (enable later when you add tests) -----
+    // "python.testing.pytestEnabled": true,
+    // "python.testing.unittestEnabled": false,
+    // "python.testing.pytestArgs": ["tests"]
 }
