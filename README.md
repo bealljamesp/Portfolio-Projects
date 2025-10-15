@@ -1,175 +1,95 @@
-# 📊 Analytics & Decision Intelligence Portfolio
+# 📊 Portfolio Overview
 
-Welcome to my professional portfolio — a curated collection of projects demonstrating how **data, models, and human reasoning** combine to solve complex business, finance, and logistics challenges.
+### Modern Decision-Intelligence Portfolio
 
-Each project blends **technical precision** with **strategic decision design**, illustrating the evolution from classic analytics to modern **Decision Intelligence**.
-
----
-
-## 🧭 Portfolio Purpose
-
-This portfolio bridges the gap between **descriptive analytics** and **decision-centric systems** that are explainable, ethical, and adaptive.
-
-It serves two complementary goals:
-
-1. **Professional Showcase:** Apply advanced analytical and AI-driven methods to real-world business, finance, logistics, and HR problems.  
-2. **Learning Framework:** Deepen intuitive understanding of models, parameters, and system behavior — developing mathematical, statistical, and domain fluency.
-
-> _Every project is both a demonstration and an experiment — solving real problems while expanding mastery and reasoning._
+This portfolio is organized around the evolution of modern analytics into **Decision Intelligence** systems—bridging data analysis, simulation, optimization, and AI governance. Each project builds technical fluency, domain context, and interpretability while reinforcing the central goal: **make results predictable, not mysterious.**
 
 ---
 
-## ⚙️ Portfolio Architecture
+## 🧩 Core Projects
 
-The portfolio is organized into **Core Domains** (problem contexts) and **Next-Generation Enablers** (analytical capabilities).
+These projects represent the analytical and decision-making foundation of the portfolio—realistic, interpretable, and reproducible use cases designed to strengthen analytical reasoning before expanding into AI-assisted and governance layers.
 
-### 🧱 **Core Domains — Where Problems Live**
+### **Data Analytics**
 
-| Folder | Focus | Description |
-|---------|--------|-------------|
-| **Core/Data_Analytics/** | Foundational analytics | Forecasting, regression, dashboards, and optimization models that form the base of decision intelligence. |
-| **Core/Supply_Chain_Logistics/** | Operations & logistics | Inventory, transportation, routing, and digital twin modeling for operational efficiency. |
-| **Core/Finance/** | Financial analytics | Forecasting, valuation, ROI analysis, and capital decision models for financial planning and risk. |
-| **Core/HR_People_Analytics/** | Workforce analytics | Retention, performance, and human-centered decision modeling. |
+> Core focus: classical statistical modeling and forecasting fundamentals.
 
----
+* **DA-01 Churn Prediction (Logit)**
+  Build interpretable logistic regression models to predict customer attrition and understand feature influence.
 
-### 🧩 **Next-Generation Enablers — How Problems Are Solved**
+* **DA-02 Time Series Forecasting**
+  Explore ARIMA, ETS, and Prophet methods; evaluate forecast error metrics and seasonality behavior.
 
-Organized into three functional layers reflecting how modern decision systems evolve from intelligence to governance.
+### **Supply Chain & Logistics**
 
-#### 🧠 **Intelligence Layer**
-Focus: reasoning, modeling, and interpretability.  
-- `AI_Assisted_Analytics/` — AI tools (GPT, AutoML, Copilot) accelerating analytical work.  
-- `Explainable_AI/` — Transparency via SHAP, LIME, and interpretable models.  
-- `Optimization_RL/` — Reinforcement learning and prescriptive optimization.  
-- `Causal_Graphs/` — Modeling cause-effect relationships with Directed Acyclic Graphs (DAGs).
+> Core focus: decision systems—linking forecasting, inventory theory, and simulation.
 
-#### 🏗️ **System Layer**
-Focus: simulation, connectivity, and systemic reasoning.  
-- `Simulation_Digital_Twins/` — Virtual models of logistics and business systems for testing scenarios.  
-- `Edge_IoT/` — Real-time analytics from sensors and streaming data.  
-- `Knowledge_Graphs/` — Contextual data linking for semantic reasoning.  
-- `Sim_Opt_Hybrids/` — Hybrid simulation-optimization models for planning and scheduling.
+* **SCM-01 Forecasting Inventory Policies**
+  *Starting project.* Develop an end-to-end decision system from forecast to inventory policy, simulation, and decision analysis.
 
-#### ⚖️ **Governance Layer**
-Focus: ethics, transparency, and human alignment.  
-- `Blockchain/` — Provenance tracking, smart contracts, and distributed trust.  
-- `Responsible_AI/` — Model lineage, bias metrics, and governance dashboards.  
-- `Human_AI_Collaboration/` — Decision copilots and human-AI workflow design.  
-- `Generative_Support/` — LLM-driven scenario reports and automated documentation.  
-- `Ethical_AI_Policy/` — Frameworks and principles for responsible AI practice.
+* **SCM-02 Network Optimization Monte Carlo**
+  Extend SCM-01 into multi-node network optimization under uncertainty. Integrate stochastic simulation and cost-service tradeoffs.
+
+### **Finance**
+
+> Placeholder domain for future portfolio expansion into capital allocation, valuation, and risk analysis.
+
+### **HR / People Analytics**
+
+> Placeholder domain for future work exploring workforce planning, retention modeling, and leadership analytics.
 
 ---
 
-## 🧠 Learning & Mastery Framework
+## 🚀 Next-Generation Enablers
 
-Every project reflects **two complementary dimensions**:
+The enabler layer transforms analytical outputs into adaptive, intelligent, and governable systems. These projects emphasize automation, transparency, and ethical deployment—key to enterprise readiness.
 
-| Dimension | Focus |
-|------------|--------|
-| **External Goal – Professional Showcase** | Apply analytical methods or technologies to realistic, data-driven business problems. |
-| **Internal Goal – Learning & Mastery** | Develop mathematical/statistical fluency, understand parameter sensitivity, and expand professional vocabulary. |
+### **Governance Layer**
 
-Each project README addresses:
-- Problem & scenario  
-- Methods and enablers applied  
-- Solution & insight  
-- Reflection on learning and terminology  
+> Embedding ethics, traceability, and accountability into data and AI systems.
 
----
+* **BLK-01 Pharma Serialization DSCSA Sim**
+  Blockchain-based traceability simulation for pharmaceutical supply chains.
 
-### 📈 Project Progression (Updated)
+* **GOV-01 Responsible AI Dashboard**
+  Governance analytics and explainable AI oversight dashboard.
 
-| Tier | Project | Theme / Focus |
-|------|----------|---------------|
-| **1. Decision Intelligence Foundation** | `LOG-02_forecasting_inventory_policies` | Forecasting → Inventory Policy → Simulation (first end-to-end Decision Intelligence case) |
-| **2. Core Analytics Refresh** | `DA-01_churn_prediction_logit` | Classical modeling, interpretation, and explainability |
-|  | `DA-03_time_series_forecasting` | Forecasting fundamentals; statistical vs. ML comparison |
-| **3. Advanced Logistics Modeling** | `LOG-03_network_optimization_montecarlo` | Optimization, stochastic modeling, uncertainty |
-| **4. AI-Assisted Layer** | `AI-02_ai_forecasting_retail_demand` | Compare classical and AI forecasting models |
-|  | `AI-04_generativeai_supplychaindocs` | Automated narrative generation for supply-chain decisions |
-| **5. Governance & Trust Layer** | `BLK-03_pharma_serialization_dscsa_sim` | Blockchain traceability and compliance simulation |
-| **6. New Enabler Builds** | `SIM-01_policy_robustness_simulator` | Simulation / Digital Twin |
-|  | `KG-01_logistics_graph_inference` | Knowledge Graph reasoning |
-|  | `GOV-01_model_audit_bias_check` | Responsible AI auditing |
+### **Intelligence Layer**
 
----
+> AI-assisted decision intelligence and explainable automation.
 
-## 📚 Supporting Documents
+* **AI-01 AI Forecasting Retail Demand**
+  Machine-learning forecasting pipeline benchmarked against SCM-01's classical models.
 
-| File | Purpose |
-|------|----------|
-| [`docs/Next_Generation_Enablers.md`](docs/Next_Generation_Enablers.md) | Detailed definitions of each enabler and its learning focus. |
-| [`docs/PROJECT_GAMEPLAN.md`](docs/PROJECT_GAMEPLAN.md) | The roadmap outlining progression, goals, and applied outcomes. |
-| [`docs/glossary.md`](docs/glossary.md) | Central reference for technical and industry vocabulary. |
-| [`assets/next_decade_analyst_framework.png`](assets/next_decade_analyst_framework.png) | Visual summary of the Next-Decade Analyst Framework. |
+* **AI-02 Generative AI Supply Chain Docs**
+  Generative AI for document summarization, supply-chain reporting, and human-AI collaboration.
+
+### **System Layer**
+
+> Integrating analytics into system-level simulations and connected digital ecosystems.
+
+* **IOT-01 Predictive Maintenance Demo**
+  Edge-to-cloud sensor simulation demonstrating predictive modeling at the system layer.
+
+* **KG-01 Logistics Knowledge Graph**
+  Knowledge graph prototype connecting supply chain, product, and network data for reasoning.
 
 ---
 
-## 🧰 Developer Tools
+## 📘 Project Progression & Phases
 
-These tools maintain and verify the structure of this portfolio across systems.
-
-| Tool | Location | Description |
-|------|-----------|--------------|
-| **verify_structure.ps1** | `_tools/verify_structure.ps1` | PowerShell script that validates the portfolio directory tree on Windows. |
-| **verify_structure.sh** | `_tools/verify_structure.sh` | Linux/macOS/WSL version of the structure verifier for Bash environments. |
-| **Portfolio.code-workspace** | root | VS Code workspace configuration linking all folders and docs. |
-| **environment.yml** | root | Reproducible Conda environment for Python dependencies. |
-| **PORTFOLIO_INIT.log** | `docs/` | Chronological record of all structural changes. |
-
-> 💡 These utilities ensure consistency and reproducibility across Windows, WSL, and Linux environments.  
-> Future additions (e.g., setup scripts, sync automation) will live in the `_tools/` folder.
+| Phase                                  | Focus                             | Projects             | Description                                                                                                                           |
+| -------------------------------------- | --------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Decision Foundations**            | Forecasting & Classical Analytics | SCM-01, DA-01, DA-02 | Build reproducible, interpretable analytical models. SCM-01 serves as the starting point and sets the decision-intelligence standard. |
+| **2. Decision Systems & Optimization** | Multi-echelon systems             | SCM-02               | Extend forecasting and simulation into network-level optimization and uncertainty management.                                         |
+| **3. AI-Assisted Analytics**           | Automation & Reasoning            | AI-01, AI-02         | Integrate machine learning and generative AI into analytical decision workflows.                                                      |
+| **4. Governance & Trust**              | Ethical & Explainable Systems     | BLK-01, GOV-01       | Reinforce governance, transparency, and traceability in decision systems.                                                             |
 
 ---
 
-## ⚙️ Environment Quick Start
+### 🎯 Guiding Principles
 
-This portfolio is designed to be fully reproducible on **Windows**, **WSL**, or **Linux** systems using VS Code.
-
-### 🧰 Recommended Local Setup
-
-| Tool | Purpose | Notes / Download |
-|------|----------|------------------|
-| **VS Code** | Main IDE for coding, Jupyter notebooks, and documentation. | [code.visualstudio.com](https://code.visualstudio.com/) |
-| **Anaconda (Python 3.10+)** | Manages Python environments, dependencies, and Jupyter integration. | [anaconda.com/download](https://www.anaconda.com/download) |
-| **Git** | Version control and GitHub synchronization. | [git-scm.com/downloads](https://git-scm.com/downloads) |
-| **PowerShell 7+** | Modern Windows shell for running `.ps1` scripts. | Pre-installed on Windows 10/11; upgrade via [Microsoft Store](https://aka.ms/powershell). |
-| **Windows Subsystem for Linux (WSL 2)** | Optional: provides a native Linux environment inside Windows. | [WSL installation guide](https://learn.microsoft.com/windows/wsl/install) |
-
-### 🧩 Folder Conventions
-
-| Folder | Purpose |
-|---------|----------|
-| **Core/** | Contains applied analytics projects organized by domain. |
-| **Enablers/** | Holds next-generation analytical technologies (AI, simulation, blockchain, etc.). |
-| **docs/** | Portfolio documentation, project plans, and glossary. |
-| **assets/** | Visuals, framework diagrams, and exported charts. |
-| **_tools/** | Maintenance scripts and utilities (cross-platform). |
-
-### 🧠 Environment Activation
-
-Once Anaconda is installed:
-
-```bash
-# Create the environment from file
-conda env create -f environment.yml
-
-# Activate the portfolio environment
-conda activate analytics_portfolio
-```
-
----
-
-## 🧩 Guiding Principle
-
-> **“Understanding replaces automation.”**  
-> Every model, graph, and system here is intentionally designed — not copied or opaque — connecting **data, reasoning, and decisions** in a transparent way.
-
----
-
-**Author:** James Beall  
-**Focus Areas:** Business Analytics • Supply Chain • Finance • Decision Intelligence  
-**Location:** Southern California  
-**Contact:** [LinkedIn](#) (add link)
+* **Predictable > Mysterious:** Every model and system must behave transparently and reproducibly.
+* **Explainability > Automation:** Prioritize understanding why results occur.
+* **Integration > Isolation:** Each project connects logically to the next.
+* **Professional Readiness:** The portfolio reflects a coherent journey—from analyst to decision-intelligence architect.

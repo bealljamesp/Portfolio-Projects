@@ -1,22 +1,68 @@
+
+---
+
+# ✅ **2. Rebuilt `docs/project_skills_summary.txt`**
+
+```text
 PORTFOLIO PROJECTS — SKILLS & SUMMARY
-Generated: 2025-09-19
+Generated: 2025-10-14
 
-[Blockchain/Common]
-Summary: Foundational utilities, smart contracts, and notebooks to learn hashing, anchoring, and verification.
-Skills: hashing, tamper-evidence, basic smart contracts, Python utilities, Jupyter workflows.
+───────────────────────────────
+[SCM-01 — Forecasting → Inventory → Simulation → Decision]
+Summary:
+Establishes the end-to-end Decision-Intelligence loop: forecasting demand,
+optimizing inventory policies, simulating uncertainty, and generating cost-to-service
+recommendations.
 
-[BLK-01 — Food Traceability PoC]
-Summary: Chain-of-custody with temperature events; anchor row digests and verify integrity.
-Skills: EPCIS-style modeling, CSV row hashing, join anchored refs, recall analysis KPIs.
+Skills:
+forecasting • time-series modeling • EOQ / (Q,R) inventory control •
+Monte Carlo simulation • KPI analysis • explainability • governance documentation
 
-[BLK-02 — Freight Settlement Smart Contracts]
-Summary: Milestone-triggered payments to shorten settlement cycles and reduce disputes.
-Skills: smart contract event design, milestone modeling, dual-signature flows, KPI tracking.
+───────────────────────────────
+[DA-01 — Churn Prediction (Logit)]
+Summary:
+Binary-classification pipeline using logistic regression for retention analysis.
+Skills:
+EDA • feature engineering • logistic regression • model interpretation • ROC metrics
 
-[BLK-03 — Pharma Serialization DSCSA Sim]
-Summary: Serialize and verify unit movement; sample verification across partners.
-Skills: identifier anchoring, serialization data models, audit sampling, compliance reporting.
+───────────────────────────────
+[DA-02 — Time-Series Forecasting]
+Summary:
+Compares statistical (ARIMA/ETS) vs machine-learning forecasting methods.
+Skills:
+time-series decomposition • model selection • cross-validation • forecasting KPI design
 
-[Integrations in Logistics & SCM_AI]
-Summary: Plug provenance/risk into KPIs, forecasts, and optimization models.
-Skills: data joins, cost modifiers, risk scoring, explainability for decisions.
+───────────────────────────────
+[SCM-02 — Network Optimization Monte Carlo]
+Summary:
+Extends SCM-01 to network-level logistics and stochastic optimization.
+Skills:
+linear / integer optimization • simulation integration • cost minimization • scenario testing
+
+───────────────────────────────
+[AI-01 — AI-Forecasting Retail Demand]
+Summary:
+AI-assisted demand forecasting and model-selection automation.
+Skills:
+AutoML • LLM prompting • feature selection • explainable AI outputs • forecast evaluation
+
+───────────────────────────────
+[AI-02 — Generative AI Supply-Chain Docs]
+Summary:
+Generative summarization/classification of logistics documents.
+Skills:
+LLM usage • text classification • RAG retrieval • data governance • accuracy validation
+
+───────────────────────────────
+[GOV-01 — Responsible AI Dashboard]
+Summary:
+Governance dashboard for fairness, bias, and drift monitoring.
+Skills:
+AI governance • bias metrics • explainability • compliance visualization • reporting automation
+
+───────────────────────────────
+[BLK-01 — Pharma Serialization DSCSA Sim]
+Summary:
+Blockchain traceability simulation for DSCSA compliance.
+Skills:
+ledger design • serialization • hash anchoring • compliance workflow • report auditability
