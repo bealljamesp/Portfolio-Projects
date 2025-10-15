@@ -1,65 +1,61 @@
 param(
-  [string]$ProjectPath = ".",
-  [string[]]$Names = @("forecasting","inventory_policy","simulation","results_reflection")
+  [Parameter(Mandatory = $true)][string]$NotebookPath,
+  [Parameter(Mandatory = $true)][string]$SanityCellPath
 )
 
-$nbDir = Join-Path $ProjectPath "notebooks"
-if (-not (Test-Path $nbDir)) { New-Item -ItemType Directory -Path $nbDir | Out-Null }
+if (-not (Test-Path $NotebookPath)) { Write-Error "Notebook not found: $NotebookPath"; exit 1 }
+if (-not (Test-Path $SanityCellPath)) { Write-Error "Sanity cell file not found: $SanityCellPath"; exit 1 }
 
-$sanity = @"
-# --- Notebook Sanity Cell (standard) ---
-import os, sys, platform, random, numpy as np, pandas as pd
-from pathlib import Path
-print("Python:", sys.version.split()[0], "| OS:", platform.system(), platform.release())
-print("Conda env:", os.environ.get("CONDA_DEFAULT_ENV", "<unknown>"))
-CANDIDATES = ["src", "data", "notebooks"]
-here = Path.cwd()
-root = here
-for p in [here] + list(here.parents):
-    if all((p / c).exists() for c in CANDIDATES):
-        root = p; break
-os.chdir(root); print("Working dir set to:", Path.cwd())
-src = Path("src")
-if src.exists() and str(src.resolve()) not in sys.path:
-    sys.path.insert(0, str(src.resolve()))
-    print("Added to PYTHONPATH:", src.resolve())
-%load_ext autoreload
-%autoreload 2
-pd.set_option("display.max_rows", 50)
-pd.set_option("display.max_columns", 100)
-pd.options.display.float_format = "{:,.4f}".format
-np.random.seed(42); random.seed(42)
-import matplotlib.pyplot as plt
-print("Libs ok: numpy={}, pandas={}, matplotlib={}".format(np.__version__, pd.__version__, plt.matplotlib.__version__))
-"@
+# Load notebook JSON
+$nbJson = Get-Content -Raw -LiteralPath $NotebookPath | ConvertFrom-Json
 
-function New-NotebookJson {
-  param([string]$title, [string]$firstCell)
-  $obj = [ordered]@{
-    "cells" = @(
-      [ordered]@{
-        "cell_type"="markdown"; "metadata"=@{}; "source"=@("# $title`n")
-      },
-      [ordered]@{
-        "cell_type"="code"; "metadata"=@{}; "outputs"=@(); "execution_count"=$null;
-        "source" = $firstCell -split "`r?`n"
-      }
-    )
-    "metadata" = @{ "kernelspec" = @{ "display_name" = "Python (analytics_portfolio)"; "language"="python"; "name"="python3" } }
-    "nbformat"=4; "nbformat_minor"=5
+# Marker used to detect an existing cell
+$Marker = "# --- Sanity Check Cell (inline, self-contained) ---"
+
+# Check for existing sanity cell
+$exists = $false
+foreach ($cell in $nbJson.cells) {
+  if ($cell.cell_type -eq "code") {
+    $src = ($cell.source -join "")
+    if ($src -like "*$Marker*") { $exists = $true; break }
   }
-  return ($obj | ConvertTo-Json -Depth 6)
 }
 
-$i = 1
-foreach ($n in $Names) {
-  $file = Join-Path $nbDir ("{0:00}_{1}.ipynb" -f $i, $n)
-  if (-not (Test-Path $file)) {
-    (New-NotebookJson -title ($n -replace '_',' ' | ForEach-Object { $_ }) -firstCell $sanity) |
-      Out-File -Encoding UTF8 $file
-    Write-Host "Created: $file"
-  } else {
-    Write-Host "Exists:  $file"
-  }
-  $i++
+if ($exists) {
+  Write-Host "Sanity Check cell already present. No changes made." -ForegroundColor Yellow
+  exit 0
 }
+
+# Load sanity cell code from file and ensure it has the marker at top
+$code = Get-Content -Raw -LiteralPath $SanityCellPath
+if ($code -notlike "*$Marker*") {
+  $code = "$Marker`n$code"
+}
+
+# Create a new code cell object
+$sanityCell = [pscustomobject]@{
+  cell_type = "code"
+  metadata  = @{}
+  source    = ($code -split "`n")
+  outputs   = @()
+  execution_count = $null
+}
+
+# Decide insertion index:
+# If first cell is markdown (title/intro), insert AFTER it; otherwise prepend
+$insertIndex = 0
+if ($nbJson.cells.Count -gt 0 -and $nbJson.cells[0].cell_type -eq "markdown") {
+  $insertIndex = 1
+}
+
+# Insert the sanity cell
+$pre  = @()
+$post = @()
+if ($insertIndex -gt 0) { $pre  = $nbJson.cells[0..($insertIndex-1)] }
+if ($insertIndex -lt $nbJson.cells.Count) { $post = $nbJson.cells[$insertIndex..($nbJson.cells.Count-1)] }
+
+$nbJson.cells = @($pre + @($sanityCell) + $post)
+
+# Write updated notebook
+$nbJson | ConvertTo-Json -Depth 200 | Set-Content -LiteralPath $NotebookPath -Encoding UTF8
+Write-Host "Inserted Sanity Check cell into $NotebookPath (index $insertIndex)" -ForegroundColor Green

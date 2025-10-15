@@ -1,3 +1,7 @@
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Reproducible](https://img.shields.io/badge/reproducible-seeded-blue)
+![Notebook](https://img.shields.io/badge/entry-notebook-black)
+
 # 🏗️ SCM-01 — Forecasting → Inventory → Simulation → Decision
 
 📂 **Domain:** Supply-Chain & Logistics

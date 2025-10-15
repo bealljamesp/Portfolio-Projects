@@ -7,3 +7,8 @@ service_level_target: 0.95
 lead_time_days: 14
 review_period_days: 7
 seed: 42
+
+data_dir: "./data"
+reports_dir: "./reports"
+models_dir: "./models"
+random_seed: 42
