@@ -1,0 +1,60 @@
+# ==============================================================
+# Portfolio Project Template — pyproject_portfolio.toml
+# ==============================================================
+
+# This template defines a reproducible environment baseline for
+# analytics, forecasting, optimization, and decision-intelligence projects.
+# Copy or reference it when initializing a new project folder.
+# ==============================================================
+
+[project]
+name = "PROJECT_NAME_PLACEHOLDER"
+version = "0.1.0"
+description = "Short project description goes here."
+authors = [{ name = "Your Name", email = "you@example.com" }]
+readme = "README.md"
+requires-python = ">=3.11"
+
+# ---- Reproducible Dependencies ----
+# Strict pins ensure portfolio-grade reproducibility across environments.
+# Replace or extend as needed, but keep '==' pins for all core libs.
+dependencies = [
+    "numpy==1.26.4",
+    "pandas==2.2.3",
+    "statsmodels==0.14.4",
+    "scikit-learn==1.5.2",
+    "matplotlib==3.9.2",
+]
+
+# Optional: specify optional dependencies for dashboards, notebooks, or testing
+# [project.optional-dependencies]
+# dev = ["pytest==8.3.3", "ruff==0.6.9", "jupyterlab==4.2.5"]
+
+# ==============================================================
+
+[tool.ruff]
+# ---- Global Ruff Configuration ----
+# Ruff combines linting and formatting. These settings ensure
+# stylistic consistency across all projects.
+line-length = 100
+target-version = "py311"
+fix = true
+unsafe-fixes = false
+
+[tool.ruff.lint]
+# Select key linting rule families:
+# E,F = pycodestyle/pyflakes, I = import sort, B = bugbear, UP = pyupgrade
+select = ["E", "F", "I", "B", "UP"]
+ignore = []  # add any project-specific ignores here
+
+[tool.ruff.format]
+# Formatting preferences — unify code appearance
+quote-style = "double"
+indent-style = "space"
+
+# ==============================================================
+
+# [tool.pytest.ini_options]
+# addopts = "-q -ra -v"
+# testpaths = ["tests"]
+# markers = ["integration", "unit", "smoke"]
