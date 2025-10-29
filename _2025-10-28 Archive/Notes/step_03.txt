@@ -1,0 +1,29 @@
+Step 3 – Review Prompt (Post-Project Evaluation)
+
+I’ve completed my first portfolio project and want you to review it as if you were a hiring manager or senior analyst assessing a candidate’s work.
+
+Please evaluate the following:
+
+Repository Structure: Does it follow professional standards (data/, src/, notebooks/, docs/, visuals/, tests/)?
+
+File Naming and Organization: Are naming conventions, folder hierarchy, and commit history clear and consistent?
+
+README.md: Is it recruiter-friendly? Does it explain the business problem, analytical method, and results effectively?
+
+Code Quality: Are docstrings, comments, and modularization professional? Is the code readable and reproducible?
+
+Analytical Rigor: Is the math/statistics sound? Are methods appropriate and results interpretable?
+
+Business Communication: Are insights clearly connected to business value and decision-making?
+
+Professional Readiness: Does this project demonstrate industry-level competence and independence?
+
+Give your review in a structured format:
+
+Assessment: summarize strengths and weaknesses
+
+Recommendations: actionable improvements
+
+Rationale: why each suggestion matters for professional credibility
+
+Include any examples, rewrites, or best-practice snippets that would elevate it to “hire-ready” quality.

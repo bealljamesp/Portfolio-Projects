@@ -87,6 +87,32 @@ The enabler layer transforms analytical outputs into adaptive, intelligent, and 
 
 ---
 
+## 🧩 Portfolio Governance & Project Handoff System
+
+This portfolio operates under a unified **Decision-Intelligence Governance Framework** built for traceability, reproducibility, and professional readiness.
+
+Each project follows a defined lifecycle — *Kick-off → Development → Governance Review → Handoff* — ensuring analytical decisions and lessons learned continuously flow back into a central knowledge base.
+
+### 🔗 Central Oversight
+- **[Central Dashboard](docs/central_dashboard.md)** — live index of all active and archived projects.
+- **docs/handoff/** — governance standards and project-to-central handoff protocols.
+- **docs/lessons_learned_log.md** — portfolio-wide lessons and continuous improvement log.
+
+### 🚧 Upcoming Projects
+| Code | Name | Phase | Status |
+|------|------|-------|--------|
+| **DA-01** | Churn Prediction (Logit) | Decision Foundations | ⏳ Planned |
+| **DA-02** | Time Series Forecasting | Decision Foundations | ⏳ Planned |
+| **SCM-02** | Network Optimization Monte Carlo | Decision Systems & Optimization | ⏳ Planned |
+| **AI-01** | AI Forecasting Retail Demand | AI-Assisted Analytics | ⏳ Planned |
+| **AI-02** | Generative AI Supply Chain Docs | AI-Assisted Analytics | ⏳ Planned |
+| **BLK-01** | Pharma Serialization DSCSA Sim | Governance & Trust | ⏳ Planned |
+| **GOV-01** | Responsible AI Dashboard | Governance & Trust | ⏳ Planned |
+
+*Each completed project contributes to portfolio-level governance standards and informs the next generation of analytical systems.*
+
+---
+
 ### 🎯 Guiding Principles
 
 * **Predictable > Mysterious:** Every model and system must behave transparently and reproducibly.

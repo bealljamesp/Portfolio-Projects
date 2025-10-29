@@ -1,0 +1,19 @@
+Step 2 – Follow-Up Prompt (Start Project #1)
+
+Great — now let’s start with Project #1 from that roadmap.
+
+Please help me define the following for this project:
+
+Problem Statement: the business or analytical question it answers.
+
+Objectives & Deliverables: what outputs or insights I should produce.
+
+Dataset Guidance: where to find or how to generate appropriate data.
+
+Technical Stack: which tools, libraries, or files I’ll need to set up in VS Code.
+
+Repository Structure: including folders (data/, src/, notebooks/, docs/, etc.) and any required setup files (requirements.txt, .gitignore, README.md).
+
+Skill Demonstration: which key skills this project will showcase to a recruiter.
+
+Then, help me initialize a working plan so I can start coding and structuring it locally.

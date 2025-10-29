@@ -1,0 +1,19 @@
+I’m ready to start building my professional analyst portfolio from scratch.
+
+I want to create a 10-project roadmap that demonstrates full analyst capability — from data fundamentals and statistics through advanced analytics, AI-assisted methods, and system-level capabilities.
+
+Please design a structured roadmap for me that:
+
+Covers the core analyst toolkit (Python, SQL, Excel, visualization, statistics).
+
+Includes industry applications (e.g., supply chain, finance, marketing, sustainability, operations).
+
+Integrates capability layers (Governance & Ethics, Analytical Intelligence, Systems & Infrastructure).
+
+Shows a logical progression from foundational to advanced projects.
+
+Suggests what datasets or data types I should use for each project.
+
+Explains how each project contributes to my overall professional readiness.
+
+Present it in a clear table or structured outline, with rationale for each project.
